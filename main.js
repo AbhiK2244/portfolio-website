@@ -209,3 +209,32 @@ sr.reveal(".blog_card", {origin: "top", interval: 300});
 
 sr.reveal(".contact_form", {origin: "left"});
 sr.reveal(".contact_item", {origin: "right", interval: 300});
+
+
+/*~~~~~~~~~~~~~~~ SEND EMAILS ~~~~~~~~~~~~~~~*/
+function emailSend()
+{
+    let params = {
+        firstname : document.querySelector("#firstname").value,
+        lastname : document.querySelector("#lastname").value,
+        email : document.querySelector("#email").value,
+        phone : document.querySelector("#phone").value,
+        service : document.querySelector("#service").value,
+        message : document.querySelector("#message").value
+    };
+
+    const serviceID = "service_jn1kjka";
+    const templateID = "template_ciwfhn4";
+
+    emailjs.send(serviceID, templateID, params)
+    .then((res) => {
+        document.querySelector("#firstname").value = "";
+        document.querySelector("#lastname").value = "";
+        document.querySelector("#email").value = "";
+        document.querySelector("#phone").value = "";
+        document.querySelector("#message").value = "";
+        console.log(res);
+        alert("your message sent successfully");
+    })
+    .catch( (err) => console.log(err));
+}

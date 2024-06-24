@@ -686,7 +686,7 @@
              </div>
 
              <!-- contact form -->
-              <form class="contact_form flex-1 bg-sectionColor dark:bg-darkBodyColor border border-primaryColor px-5 py-10 rounded-3xl space-y-3">
+              <form onsubmit="emailSend(); reset(); return false;" class="contact_form flex-1 bg-sectionColor dark:bg-darkBodyColor border border-primaryColor px-5 py-10 rounded-3xl space-y-3">
               <!-- <form class="contact_form flex-1 bg-sectionColor dark:bg-darkSectionColor border border-primaryColor px-5 py-10 rounded-3xl space-y-3"> -->
                 <!-- subtitle & description -->
                  <div class="flex flex-col">
@@ -697,19 +697,19 @@
 
                  <div class="space-y-3 mt-7">
                     <div class="flex flex-col md:flex-row items-center gap-3">
-                        <input type="text" placeholder="First name" name="firstname" autocomplete="off">
+                        <input type="text" id="firstname" placeholder="First name" name="firstname" autocomplete="off">
 
-                        <input type="text" placeholder="Last name" name="lastname" autocomplete="off">
+                        <input type="text" id="lastname" placeholder="Last name" name="lastname" autocomplete="off">
                     </div>
 
                     <div class="flex flex-col md:flex-row items-center gap-3">
-                      <input type="email" placeholder="Email Address" name="email" autocomplete="off">
+                      <input type="email" id="email" placeholder="Email Address" name="email" autocomplete="off">
 
-                      <input type="phone" placeholder="Phone number" name="phone" autocomplete="off">
+                      <input type="phone" id="phone" placeholder="Phone number" name="phone" autocomplete="off">
                   </div>
                  </div>
 
-                 <select>
+                 <select id="service">
                   <option selected>Choose a service</option>
                   <option value="Branding">Branding Design</option>
                   <option value="web">Web Design</option>
@@ -718,7 +718,7 @@
                  </select>
 
                  <div class="space-y-3">
-                  <textarea name="message" rows="5" placeholder="Message"></textarea>
+                  <textarea id="message" name="message" rows="5" placeholder="Message"></textarea>
                   <button class="btn">
                     <span class="z-10">send message</span>
                   </button>
@@ -776,6 +776,18 @@
     <a id="scroll-up" href="#" class="fixed right-20 -bottom-1/2 bg-primaryColor px-4 py-2 rounded-full text-lg text-whiteColor z-50 hover:-translate-y-1 ease-in duration-200">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
+
+    <!--~~~~~~~~~~~~~~~ Send Email ~~~~~~~~~~~~~~~-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+      emailjs.init({
+        publicKey: "Oh5Jh3rCkqRMNl5_j",
+      });
+      })();
+    </script>
 
     <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
     <script src="https://unpkg.com/scrollreveal"></script>
