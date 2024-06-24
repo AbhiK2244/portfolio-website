@@ -22,12 +22,12 @@ hamburger.addEventListener("click", ()=>{
 const html = document.querySelector("html");
 const themeBtn = document.querySelector("#theme-toggle");
 
-if(localStorage.getItem("mode") == "dark")
+if(localStorage.getItem("mode") == "light")
 {
-    darkMode();
+    lightMode();
 }
 else {
-    lightMode();
+    darkMode();
 }
 
 themeBtn.addEventListener("click", (e) => {
