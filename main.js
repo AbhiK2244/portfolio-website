@@ -178,7 +178,7 @@ window.addEventListener("scroll", activeLink);
 /*~~~~~~~~~~~~~~~ SCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
 const sr = ScrollReveal({
     origin: "top",
-    distance: "60px",
+    distance: "5px",
     duration: 2500,
     delay: 400
 });
