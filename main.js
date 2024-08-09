@@ -180,35 +180,35 @@ const sr = ScrollReveal({
     origin: "top",
     distance: "5px",
     duration: 2500,
-    delay: 400
+    delay: 200
 });
 
 sr.reveal(".hero__image");
 sr.reveal(".hero_content", {origin: "bottom"});
-sr.reveal(".hero_footer", {origin: "bottom", delay: 1200});
+sr.reveal(".hero_footer", {origin: "bottom", delay: 400});
 
 sr.reveal(".service__top", {origin: "bottom"});
-sr.reveal(".service_item", {origin: "bottom", interval: 300});
+sr.reveal(".service_item", {origin: "bottom", interval: 200});
 
 
 sr.reveal(".recent_works_top", {origin: "bottom"});
-sr.reveal(".recent_works_tabs", {origin: "bottom", delay: 800});
-sr.reveal(".work_card", {origin: "bottom", delay: 1200});
+sr.reveal(".recent_works_tabs", {origin: "bottom", delay: 200});
+sr.reveal(".work_card", {origin: "bottom", delay: 400});
 
 sr.reveal(".exp_top", {origin: "top"});
-sr.reveal(".exp_card", {origin: "left", interval: 300});
+sr.reveal(".exp_card", {origin: "left", interval: 200});
 
 sr.reveal(".edu_top", {origin: "top"});
-sr.reveal(".edu_card", {origin: "right", interval: 300});
+sr.reveal(".edu_card", {origin: "right", interval: 200});
 
 sr.reveal(".skills_top", {origin: "bottom"});
-sr.reveal(".skills_card", {origin: "bottom", interval: 300});
+sr.reveal(".skills_card", {origin: "bottom", interval: 200});
 
 sr.reveal(".blog_top", {origin: "top"});
-sr.reveal(".blog_card", {origin: "top", interval: 300});
+sr.reveal(".blog_card", {origin: "top", interval: 200});
 
 sr.reveal(".contact_form", {origin: "left"});
-sr.reveal(".contact_item", {origin: "right", interval: 300});
+sr.reveal(".contact_item", {origin: "right", interval: 200});
 
 
 /*~~~~~~~~~~~~~~~ SEND EMAILS ~~~~~~~~~~~~~~~*/
