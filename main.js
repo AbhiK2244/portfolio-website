@@ -179,13 +179,13 @@ window.addEventListener("scroll", activeLink);
 const sr = ScrollReveal({
     origin: "top",
     distance: "5px",
-    duration: 2500,
+    duration: 1500,
     delay: 200
 });
 
 sr.reveal(".hero__image");
 sr.reveal(".hero_content", {origin: "bottom"});
-sr.reveal(".hero_footer", {origin: "bottom", delay: 400});
+sr.reveal(".hero_footer", {origin: "bottom", delay: 200});
 
 sr.reveal(".service__top", {origin: "bottom"});
 sr.reveal(".service_item", {origin: "bottom", interval: 200});
@@ -193,7 +193,7 @@ sr.reveal(".service_item", {origin: "bottom", interval: 200});
 
 sr.reveal(".recent_works_top", {origin: "bottom"});
 sr.reveal(".recent_works_tabs", {origin: "bottom", delay: 200});
-sr.reveal(".work_card", {origin: "bottom", delay: 400});
+sr.reveal(".work_card", {origin: "bottom", delay: 200});
 
 sr.reveal(".exp_top", {origin: "top"});
 sr.reveal(".exp_card", {origin: "left", interval: 200});
